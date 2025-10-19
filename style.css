@@ -61,7 +61,7 @@ body {
     height: 86px;
     background-color: var(--background-card);
     align-items: center;
-  
+
 }
 
 .logo {
@@ -70,6 +70,7 @@ body {
     margin: 20px 46px 20px 130px;
     padding: 12px 23px 12px 0;
 }
+
 .search-bar {
     display: flex;
     width: 665px;
@@ -78,13 +79,64 @@ body {
     border: 1px solid #0d6efd;
     border-radius: 8px;
 }
+
+.search-input {
+    display: flex;
+    align-items: center;
+    width: 421px;
+    padding: 10px;
+    font-size: var(--font-size-body);
+    color: var(--text-secondary);
+    flex-shrink: 0;
+    border: 1px solid #0d6efd;
+    border-radius: 8px 0 0 8px;
+
+}
+.category-select {
+color: var(--dark);
+ font-size: var(--font-size-body);
+ line-height: 19px;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 1rem center;
+    background-size: 1rem;
+
+    width: 145px;
+    border: 1px solid #0d6efd;
+    padding: 11px 5px 10px 10px;
+    width: 100%;
+    
+    color: var(--text-secondary);
+    font-family: inherit;
+    cursor: pointer;
+
+
+}
+
+.search-btn {
+    width: 100px;
+    background: var(--primary-gradient);
+    color: var(--white);
+    text-align: center;
+    padding: 10px 23px;
+    border: none;
+    font-size: var(--font-size-body);
+    border-radius: 0 8px 8px 0px;
+}
+
 .action-center {
     display: flex;
     width: 228px;
     height: 41px;
-    gap: 10px;
+    gap: 20px;
     padding: 6px;
-    
+    margin: 20px 132px 20px 89px;
+
 }
 
 .action-icon {
@@ -103,4 +155,5 @@ body {
     text-decoration: none;
     color: var(--text-secondary);
     font-size: var(--font-size-small);
+    flex-shrink: 0;
 }
