@@ -2,8 +2,8 @@
     /* Base colors */
     --white: #ffffff;
     --dark: #1c1c1c;
-    --gray-600: #495057;
-    --gray-500: #6c757d;
+    --gray-600: #505050;
+    --gray-500: #8b96a5;
     --gray-400: #bdc4cd;
     --gray-300: #dee2e6;
     --gray-200: #eff2f4;
@@ -45,4 +45,20 @@
 body {
     background-color: var(--background-page);
     font-family: var(--font-main);
+}
+
+.action-icon {
+  width: 20px;
+  height: 20px;
+  color: var(--text-secondary); 
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+
+.action-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--text-secondary);
 }
