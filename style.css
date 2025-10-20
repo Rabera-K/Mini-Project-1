@@ -16,7 +16,7 @@
     --orange: #ff9017;
 
     /* background */
-    --background-page: var(--gray-100);
+    --background-page: #F7FAFC;
     --background-card: var(--white);
     --background-secondary: var(--gray-200);
 
@@ -66,21 +66,21 @@ body {
     height: 86px;
     background-color: var(--background-card);
     align-items: center;
+    padding: 0 130px;
 
 }
 
 .logo {
     width: 150px;
     height: 46px;
-    margin: 20px 46px 20px 130px;
-    padding: 12px 23px 12px 0;
+    margin-right: 46px;
+   
 }
 
 .search-bar {
     display: flex;
     width: 665px;
     height: 40px;
-    margin-top: 20px;
     border: 1px solid #0d6efd;
     border-radius: 8px;
     align-items: center;
@@ -140,7 +140,9 @@ select {
     height: 41px;
     gap: 20px;
     padding: 6px;
-    margin: 20px 132px 20px 89px;
+    margin-right: 132px;
+    margin-left: 89px;
+   align-items: center;
 
 }
 
@@ -242,4 +244,38 @@ select {
     width: 22px;
     height: 16px;
 }
+   
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: var(--font-size-body);
+  width: 411px;
+  height: 24px;
+  color: var(--text-secondary);
+  margin: 20px 0 20px 133px;
+   
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: var(--text-secondary);
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.chevron {
+  color: var(--text-secondary);
+  font-size: 12px;
+  width: 10px;
+  height: 10px;
+}
+
+.current {
+  color: var(--text-secondary);
+  cursor: default;
+}
+
 
