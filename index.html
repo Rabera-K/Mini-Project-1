@@ -7,15 +7,19 @@
     <title>MarketPlace</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="foot.css">
+    <link rel="stylesheet" href="cont.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!--HEADER SECTION containing the logo, searchbar, and action center -->
     <header class="header">
         <div class="logo">
             <img src="images/logo.png" alt="Brand Logo">
         </div>
 
+        <!-- This is the searchbar -->
         <div class="search-bar">
             <input type="text" placeholder="Search" class="search-input">
             <select class="category-select">
@@ -23,7 +27,7 @@
             </select>
             <button class="search-btn">Search</button>
         </div>
-
+        <!-- This is the action center area with the profile, message, orders, and cart -->
         <div class="action-center">
             <a href="#" class="action-link">
                 <svg class="action-icon" viewBox="0 0 20 19" fill="none">
@@ -62,6 +66,9 @@
             </a>
         </div>
     </header>
+
+
+    <!-- NAVIGATION BAR AREA -->
     <div class="navigation-bar">
         <ul class="main-menu" role="menubar">
             <li>
@@ -85,6 +92,8 @@
                 </select>
             </div>
         </div>
+
+        <!-- BREADCRUMB SECTION -->
     </div>
     <nav class="breadcrumb">
         <a href="#">Home</a>
@@ -95,17 +104,22 @@
         <span class="chevron">›</span>
         <span class="current">Summer clothing</span>
     </nav>
+
+
+    <!-- CONTENT AREA with the products and sidebar -->
     <div class="main-container">
-       <div class="item">Item 1<aside class="sidebar">
-            <!-- categories, filters, etc -->
-        </aside></div>
+        <div class="item">Item 1<aside class="sidebar">
+                <!-- categories, filters, etc -->
+            </aside>
+        </div>
 
         <div class="item">Item 2<section class="content">
-            <!-- search header -->
-            <!-- product cards -->
-            <!-- pagination -->
-        </section></div>
-       
+                <!-- search header -->
+                <!-- product cards -->
+                <!-- pagination -->
+            </section>
+        </div>
+
     </div>
 
 

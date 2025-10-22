@@ -1,0 +1,14 @@
+@import "style.css";
+
+.main-container {
+  display: grid;
+  grid-template-columns: 240px 920px; 
+  grid-template-rows: 1448px 1626px;
+  gap: 24px; 
+  padding: 20px 130px; 
+  background: var(--background-page);
+
+}
+.item {
+    background: var(--white);
+}

@@ -277,16 +277,4 @@ select {
   color: var(--text-secondary);
   cursor: default;
 }
-.main-container {
-  display: grid;
-  grid-template-columns: 240px 920px; 
-  grid-template-rows: 1448px 1626px;
-  gap: 24px; 
-  padding: 20px 130px; 
-  background: var(--background-page);
-   border: 1px solid #E0E0E0;
-}
-.item {
-    background: var(--white);
-}
 
