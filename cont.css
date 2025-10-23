@@ -2,13 +2,14 @@
 
 .main-container {
   display: grid;
-  grid-template-columns: 240px 920px; 
+  grid-template-columns: 230px 920px; 
   grid-template-rows: 1448px 1626px;
-  gap: 24px; 
+  gap: 26px; 
   padding: 20px 130px; 
   background: var(--background-page);
 
 }
+/* --------remove background once done------ */
 .item {
     background: var(--white);
 }
@@ -23,8 +24,8 @@
     color: var(--primary);
 }
  .sidebar {
-  width: 240px;
-  padding: 1rem;
+  width: 230px;
+  
 }
 
  .filter-header {
@@ -55,6 +56,7 @@ input[type="checkbox"] {
 
 label {
 display:inline-block;
+align-items: center;
     height: 36px;
     font-size: 16px;
     font-weight: 400;
@@ -62,6 +64,8 @@ display:inline-block;
     color: var(--dark);
     padding: 8.5px 10.5px 8.5px 0;
 }
+
+/* category section */
 .category-list li {
    display:inline-block;
    width: 230px;
@@ -71,7 +75,47 @@ display:inline-block;
     line-height: 100%;
     color: var(--text-primary);
     padding: 9px 11px 8px 0; 
+    
 }
 .category-list a {
     color: var(--primary);
+}
+/* price range section */
+
+
+/* condition section */
+.condition-list a {
+    color: var(--primary);
+}
+.condition-list input[type="checkbox"] {
+  appearance: none;           
+  width: 16px;
+  height: 16px;
+  border: 2px solid #8b96a5;
+  border-radius: 50%;          
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.condition-list input[type="checkbox"]::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #0d6efd; 
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0); 
+  transition: transform 0.2s ease;
+ 
+}
+
+/*  when checked, turn border blue and show inner dot */ 
+.condition-list input[type="checkbox"]:checked::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+.condition-list input[type="checkbox"]:checked {
+  border-color: #0d6efd; 
 }
