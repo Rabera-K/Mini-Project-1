@@ -3,7 +3,7 @@
 .main-container {
   display: grid;
   grid-template-columns: 230px 920px;
-  grid-template-rows: 1448px 1626px;
+ max-width: 1626px;
   gap: 26px;
   padding: 20px 130px;
   background: var(--background-page);
@@ -110,6 +110,7 @@ label {
   height: 4px;
   background: none;
   pointer-events: none;
+  appearance: none;
   -webkit-appearance: none;
 }
 
@@ -227,7 +228,7 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  
+  min-height: auto;
 
 }
 
@@ -402,8 +403,8 @@ input::placeholder {
 .pagination-wrapper {
   display: flex;
   justify-content: flex-end;
-  margin-top: 30px;
-  margin-bottom: 43px;
+  margin-top: 10px;
+  margin-bottom: 33px;
 
 }
 
