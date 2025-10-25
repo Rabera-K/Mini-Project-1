@@ -2,6 +2,92 @@
 
 /* NEWSLETTER SECTION */
 
+.newsletter {
+  background: #EFF2F4;
+ padding-top: 38px;
+ padding-bottom: 39px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 43px;
+
+}
+
+.newsletter-container {
+  max-width: 617px;
+  height: 113px;
+}
+
+.newsletter h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: var(--dark);
+}
+
+.newsletter p {
+  color: #606060;
+  width: 100%;
+  margin-bottom: 21px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+
+}
+
+/* Form layout */
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Input wrapper (for the icon) */
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper .email-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  color: #8B96A5;
+}
+
+/* Input box */
+.newsletter-form input {
+  padding: 10px 12px 10px 38px; /* space for icon */
+  width: 240px;
+  border: 1px solid #DEE2E7;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.newsletter-form input:focus {
+  border-color: var(--primary-color);
+}
+
+/* Button */
+.newsletter-form button {
+  padding: 10px 16px;
+  background: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.newsletter-form button:hover {
+  background: #0062cc;
+}
 
 
 
