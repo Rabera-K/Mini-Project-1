@@ -1,5 +1,11 @@
 @import "style.css";
 
+/* NEWSLETTER SECTION */
+
+
+
+
+/* FOOTER SECTION */
 footer {
     width: 1,440px;
     height: 324px;
@@ -7,9 +13,7 @@ footer {
 .section-1 {
     display: flex;
     background: var(--white);
-    padding:40px 187px 0 130px;
-   
-   
+    padding:40px 187px 0 130px;   
 }
 .socials {
     width: 276px;
@@ -51,9 +55,6 @@ footer {
     width: 108px;
 }
 
-
-
- 
 /* footer end */
 .footer-end {
     width: 100%;
