@@ -110,127 +110,128 @@
     <div class="main-container">
 
         <!-- SIDEBAR -->
-        <div class="item">Item 1<aside class="sidebar">
+        <aside class="sidebar">
 
-                <!-- Category section -->
-                <div class="filter-section">
-                    <button class="filter-header">
-                        Category
-                        <span class="arrow">&#x2303;</span>
-                    </button>
-                    <ul class="category-list">
-                        <li> Mobile accessory</li>
-                        <li> Electronics</li>
-                        <li> Smartphones</li>
-                        <li> Modern Tech</li>
-                        <li><a href="#">See all</a></li>
-                    </ul>
+            <!-- Category section -->
+            <div class="filter-section">
+                <button class="filter-header">
+                    Category
+                    <span class="arrow">&#x2303;</span>
+                </button>
+                <ul class="category-list">
+                    <li> Mobile accessory</li>
+                    <li> Electronics</li>
+                    <li> Smartphones</li>
+                    <li> Modern Tech</li>
+                    <li><a href="#">See all</a></li>
+                </ul>
+            </div>
+
+            <!-- Brands section -->
+            <div class="filter-section">
+                <button class="filter-header">
+                    Brands
+                    <span class="arrow">&#x2303;</span>
+                </button>
+                <ul class="filter-list">
+                    <li><label><input type="checkbox"> Samsung</label></li>
+                    <li><label><input type="checkbox"> Apple</label></li>
+                    <li><label><input type="checkbox"> Huawei</label></li>
+                    <li><label><input type="checkbox"> Pocco</label></li>
+                    <li><label><input type="checkbox"> Lenovo</label></li>
+                    <li><a href="#">See all</a></li>
+                </ul>
+            </div>
+
+            <!--Features section  -->
+            <div class="filter-section">
+                <button class="filter-header">
+                    Features
+                    <span class="arrow">&#x2303;</span>
+                </button>
+                <ul class="filter-list">
+                    <li><label><input type="checkbox"> Metallic</label></li>
+                    <li><label><input type="checkbox"> Plastic cover</label></li>
+                    <li><label><input type="checkbox"> 8GB Ram</label></li>
+                    <li><label><input type="checkbox"> Super power</label></li>
+                    <li><label><input type="checkbox"> Large Memory</label></li>
+                    <li><a href="#">See all</a></li>
+                </ul>
+            </div>
+
+            <!-- Price range section -->
+            <div class="filter-section">
+                <button class="filter-header">
+                    Price range
+                    <span class="arrow">&#x2303;</span>
+                </button>
+
+                <div class="range-slider">
+                    <div class="slider-track"></div>
+                    <input type="range" id="minRange" min="0" max="999999" value="100000" step="1">
+                    <input type="range" id="maxRange" min="0" max="999999" value="700000" step="1">
                 </div>
 
-                <!-- Brands section -->
-                <div class="filter-section">
-                    <button class="filter-header">
-                        Brands
-                        <span class="arrow">&#x2303;</span>
-                    </button>
-                    <ul class="filter-list">
-                        <li><label><input type="checkbox"> Samsung</label></li>
-                        <li><label><input type="checkbox"> Apple</label></li>
-                        <li><label><input type="checkbox"> Huawei</label></li>
-                        <li><label><input type="checkbox"> Pocco</label></li>
-                        <li><label><input type="checkbox"> Lenovo</label></li>
-                        <li><a href="#">See all</a></li>
-                    </ul>
+                <div class="inputs">
+                    <span><label>Min</label>
+                        <input type="number" id="minInput" placeholder="0" min="0" max="999999" /></span>
+                    <span><label>Max</label>
+                        <input type="number" id="maxInput" placeholder="999999" min="0" max="999999" />
+                </div></span>
+
+                <button class="apply-btn">Apply</button>
+            </div>
+
+
+            <!-- Conditions section -->
+            <div class="filter-section">
+                <button class="filter-header">
+                    Conditions
+                    <span class="arrow">&#x2303;</span>
+                </button>
+                <ul class="condition-list">
+                    <li><label><input type="checkbox" name="conditions" value="any"> Any</label></li>
+                    <li><label><input type="checkbox" name="conditions" value="refurbished"> Refurbished</label>
+                    </li>
+                    <li><label><input type="checkbox" name="conditions" value="brand new"> Brand new</label></li>
+                    <li><label><input type="checkbox" name="conditions" value="old items"> Old items</label></li>
+                    <li><a href="#">See all</a></li>
+                </ul>
+            </div>
+
+            <!-- Ratings section -->
+            <div class="filter-section">
+                <button class="filter-header">
+                    Ratings
+                    <span class="arrow">&#x2303;</span>
+                </button>
+                <div class="rating-filter">
+                    <input type="checkbox" id="star5" name="rating" value="5">
+                    <label for="star5"><span class="allstars">&#9733&#9733&#9733&#9733&#9733</span></label><br>
+
+                    <input type="checkbox" id="star4" name="rating" value="4">
+                    <label for="star4"><span class="allstars">&#9733&#9733&#9733&#9733</span><span
+                            class="greystar">&#9733</span></label><br>
+
+                    <input type="checkbox" id="star3" name="rating" value="3">
+                    <label for="star3"><span class="allstars">&#9733&#9733&#9733</span><span
+                            class="greystar">&#9733&#9733</span></label><br>
+
+                    <input type="checkbox" id="star2" name="rating" value="2">
+                    <label for="star2"> <span class="allstars">&#9733&#9733</span><span
+                            class="greystar">&#9733&#9733&#9733</span></label>
+
                 </div>
+            </div>
+        </aside>
 
-                <!--Features section  -->
-                <div class="filter-section">
-                    <button class="filter-header">
-                        Features
-                        <span class="arrow">&#x2303;</span>
-                    </button>
-                    <ul class="filter-list">
-                        <li><label><input type="checkbox"> Metallic</label></li>
-                        <li><label><input type="checkbox"> Plastic cover</label></li>
-                        <li><label><input type="checkbox"> 8GB Ram</label></li>
-                        <li><label><input type="checkbox"> Super power</label></li>
-                        <li><label><input type="checkbox"> Large Memory</label></li>
-                        <li><a href="#">See all</a></li>
-                    </ul>
-                </div>
-
-                <!-- Price range section -->
-                <div class="filter-section">
-                    <button class="filter-header">
-                        Price range
-                        <span class="arrow">&#x2303;</span>
-                    </button>
-
-                    <div class="range-slider">
-                        <div class="slider-track"></div>
-                        <input type="range" id="minRange" min="0" max="999999" value="100000" step="1">
-                        <input type="range" id="maxRange" min="0" max="999999" value="700000" step="1">
-                    </div>
-
-                    <div class="inputs">
-                        <span><label>Min</label>
-                            <input type="number" id="minInput" placeholder="0" min="0" max="999999" /></span>
-                        <span><label>Max</label>
-                            <input type="number" id="maxInput" placeholder="999999" min="0" max="999999" />
-                    </div></span>
-
-                    <button class="apply-btn">Apply</button>
-                </div>
-
-
-                <!-- Conditions section -->
-                <div class="filter-section">
-                    <button class="filter-header">
-                        Conditions
-                        <span class="arrow">&#x2303;</span>
-                    </button>
-                    <ul class="condition-list">
-                        <li><label><input type="checkbox" name="conditions" value="any"> Any</label></li>
-                        <li><label><input type="checkbox" name="conditions" value="refurbished"> Refurbished</label>
-                        </li>
-                        <li><label><input type="checkbox" name="conditions" value="brand new"> Brand new</label></li>
-                        <li><label><input type="checkbox" name="conditions" value="old items"> Old items</label></li>
-                        <li><a href="#">See all</a></li>
-                    </ul>
-                </div>
-
-                <!-- Ratings section -->
-                <div class="filter-section">
-                    <button class="filter-header">
-                        Ratings
-                        <span class="arrow">&#x2303;</span>
-                    </button>
-                    <div class="rating-filter">
-                        <input type="checkbox" id="star5" name="rating" value="5">
-                        <label for="star5"><span class="allstars">&#9733 &#9733 &#9733 &#9733 &#9733</span></label><br>
-
-                        <input type="checkbox" id="star4" name="rating" value="4">
-                        <label for="star4"><span class="allstars">&#9733 &#9733 &#9733 &#9733</span>
-                            <span class="greystar">&#9733</span></label><br>
-
-                        <input type="checkbox" id="star3" name="rating" value="3">
-                        <label for="star3"><span class="allstars">&#9733 &#9733 &#9733</span>
-                            <span class="greystar">&#9733 &#9733</span></label><br>
-
-                        <input type="checkbox" id="star2" name="rating" value="2">
-                        <label for="star2"> <span class="allstars">&#9733 &#9733</span>
-                            <span class="greystar">&#9733 &#9733 &#9733</span></label>
-
-                    </div>
-                </div>
-            </aside>
-        </div>
-
-        <div class="item">Item 2<section class="content">
-                <!-- search header -->
-                <div class="content-title">
-                    <span class=title-text>12,911 items in <strong>Mobile accessory</strong></span>
-                    <label><input type="checkbox">Verified only</label>
+        <!-- CONTENT SECTION with content top and content cards  -->
+        <section class="main-content">
+            <!-- search header -->
+            <div class="content-title">
+                <span class=title-text>12,911 items in <strong>Mobile accessory</strong></span>
+                <div class="right-items"><label class="verified">
+                        <img src="icons/tick.svg" alt="Tick" class="tick">Verified only</label>
                     <select class="featured" aria-label="sort-products">
                         <option value="">Featured</option>
                         <option>Brands</option>
@@ -238,292 +239,290 @@
                         <option>Condition</option>
                         <option>Ratings</option>
                     </select>
-                    <div class="content-controls">
+                    <div class="btn-group">
                         <label class="view-toggle" title="Toggle view">
                             <button class="icon-btn active" aria-pressed="true" aria-label="Grid view"><img
-                                    src="icons/grid.svg"></button>
-                            <button class="icon-btn" aria-pressed="false" aria-label="List view"><img
-                                    src="icons/list.svg"></button>
+                                    src="icons/grid.svg"></button><button class="icon-btn" aria-pressed="false"
+                                aria-label="List view"><img src="icons/list.svg"></button>
                         </label>
+                    </div> 
+                </div>
+                
+            </div>
+            <!-- product cards -->
+            <div class="card-container">
+                <!-- product card 1 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="images/image1.png" alt="Canon Camera EOS 2000, Black 10x zoom">
+                    </div>
+
+                    <div class="product-info">
+                        <h3 class="product-name">Canon Camera EOS 2000, Black 10x zoom</h3>
+
+                        <div class="product-price">
+                            <span class="current">$998.00</span>
+                            <span class="old">$1128.00</span>
+                        </div>
+
+                        <div class="product-meta">
+                            <div class="rating">
+                                 <span class="allstars">&#9733&#9733&#9733&#9733<span class="greystar">&#9733</span></span>
+                                        <span class="score">7.5</span>
+                                <span class="dot">•</span>
+                                <span class="orders">154 orders</span>
+                                <span class="dot">•</span>
+                                <span class="card-shipping">Free Shipping</span>
+                            </div>
+                        </div>
+
+                        <p class="product-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+
+                        <a href="#" class="view-details">View details</a>
+                    </div>
+
+                    <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="#0d6efd"
+                            stroke-width="2" viewBox="0 0 24 24">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                        </svg>
+                    </button>
+                </div>
+                <!-- Product card 2 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="images/image2.png" alt="Canon Camera EOS 2000, Black 10x zoom">
+                    </div>
+
+                    <div class="product-info">
+                        <h3 class="product-name">GoPro HERO6 4K Action Camera - Black</h3>
+
+                        <div class="product-price">
+                            <span class="current">$998.00</span>
+                        </div>
+
+                        <div class="product-meta">
+                            <div class="rating">
+                                 <span class="allstars">&#9733&#9733&#9733&#9733<span class="greystar">&#9733</span></span>
+                                        <span class="score">7.5</span>
+                                <span class="dot">•</span>
+                                <span class="orders">154 orders</span>
+                                <span class="dot">•</span>
+                                <span class="card-shipping">Free Shipping</span>
+                            </div>
+                        </div>
+
+                        <p class="product-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+
+                        <a href="#" class="view-details">View details</a>
+                    </div>
+
+                    <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="#0d6efd"
+                            stroke-width="2" viewBox="0 0 24 24">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                        </svg>
+                    </button>
+                </div>
+                <!-- Product card 3 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="images/image3.png" alt="Canon Camera EOS 2000, Black 10x zoom">
+                    </div>
+
+                    <div class="product-info">
+                        <h3 class="product-name">GoPro HERO6 4K Action Camera - Black</h3>
+
+                        <div class="product-price">
+                            <span class="current">$998.00</span>
+                        </div>
+
+                        <div class="product-meta">
+                            <div class="rating">
+                                 <span class="allstars">&#9733&#9733&#9733&#9733<span class="greystar">&#9733</span></span>
+                                        <span class="score">7.5</span>
+                                <span class="dot">•</span>
+                                <span class="orders">154 orders</span>
+                                <span class="dot">•</span>
+                                <span class="card-shipping">Free Shipping</span>
+                            </div>
+                        </div>
+
+                        <p class="product-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+
+                        <a href="#" class="view-details">View details</a>
+                    </div>
+
+                    <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="#0d6efd"
+                            stroke-width="2" viewBox="0 0 24 24">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                        </svg>
+                    </button>
+                </div>
+                <!-- Product card 4 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="images/image4.png" alt="Canon Camera EOS 2000, Black 10x zoom">
+                    </div>
+
+                    <div class="product-info">
+                        <h3 class="product-name">GoPro HERO6 4K Action Camera - Black</h3>
+
+                        <div class="product-price">
+                            <span class="current">$998.00</span>
+                        </div>
+
+                        <div class="product-meta">
+                            <div class="rating">
+                                 <span class="allstars">&#9733&#9733&#9733&#9733<span class="greystar">&#9733</span></span>
+                                        <span class="score">7.5</span>
+                                <span class="dot">•</span>
+                                <span class="orders">154 orders</span>
+                                <span class="dot">•</span>
+                                <span class="card-shipping">Free Shipping</span>
+                            </div>
+                        </div>
+
+                        <p class="product-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+
+                        <a href="#" class="view-details">View details</a>
+                    </div>
+
+                    <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="#0d6efd"
+                            stroke-width="2" viewBox="0 0 24 24">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                        </svg>
+                    </button>
+                </div>
+                <!-- Product card 5 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="images/image5.png" alt="Canon Camera EOS 2000, Black 10x zoom">
+                    </div>
+
+                    <div class="product-info">
+                        <h3 class="product-name">GoPro HERO6 4K Action Camera - Black</h3>
+
+                        <div class="product-price">
+                            <span class="current">$998.00</span>
+                            <span class="old">$1128.00</span>
+                        </div>
+
+                        <div class="product-meta">
+                            <div class="rating">
+                                 <span class="allstars">&#9733&#9733&#9733&#9733<span class="greystar">&#9733</span></span>
+                                <span class="score">7.5</span>
+                                <span class="dot">•</span>
+                                <span class="orders">154 orders</span>
+                                <span class="dot">•</span>
+                                <span class="card-shipping">Free Shipping</span>
+                            </div>
+                        </div>
+
+                        <p class="product-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+
+                        <a href="#" class="view-details">View details</a>
+                    </div>
+
+                    <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="#0d6efd"
+                            stroke-width="2" viewBox="0 0 24 24">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                        </svg>
+                    </button>
+                </div>
+                <!-- Product card 6 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="images/image6.png" alt="Canon Camera EOS 2000, Black 10x zoom">
+                    </div>
+
+                    <div class="product-info">
+                        <h3 class="product-name">GoPro HERO6 4K Action Camera - Black</h3>
+
+                        <div class="product-price">
+                            <span class="current">$998.00</span>
+                        </div>
+
+                        <div class="product-meta">
+                            <div class="rating">
+                                <span class="allstars">&#9733&#9733&#9733&#9733<span class="greystar">&#9733</span></span>
+                                <span class="score">7.5</span>
+                                <span class="dot">•</span>
+                                <span class="orders">154 orders</span>
+                                <span class="dot">•</span>
+                                <span class="card-shipping">Free Shipping</span>
+                            </div>
+                        </div>
+
+                        <p class="product-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+
+                        <a href="#" class="view-details">View details</a>
+                    </div>
+
+                    <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="#0d6efd"
+                            stroke-width="2" viewBox="0 0 24 24">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- pagination -->
+            <div class="pagination-wrapper">
+                <div class="pagination">
+                    <div class="show-count">
+                        <select class="show">
+                            <option>Show 10</option>
+                            <option>Show 20</option>
+                            <option>Show 50</option>
+                        </select>
+                    </div>
+
+                    <div class="page-controls">
+                        <button class="page-btn prev" aria-label="Previous page">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path d="M15 18l-6-6 6-6" />
+                            </svg>
+                        </button><button class="page-btn active">1</button><button class="page-btn">2</button><button class="page-btn">3</button><button class="page-btn next" aria-label="Next page">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path d="M9 6l6 6-6 6" />
+                            </svg>
+                        </button>
                     </div>
                 </div>
-                <!-- product cards -->
-                 <div class="main-content">
-                    <!-- product card 1 -->
-                 <div class="product-card">
-  <div class="product-img">
-    <img src="images/image1.png" alt="Canon Camera EOS 2000, Black 10x zoom">
-  </div>
+            </div>
 
-  <div class="product-info">
-    <h3 class="product-name">Canon Camera EOS 2000, Black 10x zoom</h3>
+        </section>
 
-    <div class="product-price">
-      <span class="current">$998.00</span>
-      <span class="old">$1128.00</span>
-    </div>
-
-    <div class="product-meta">
-      <div class="rating">
-        <label for="star4"><span class="allstars">&#9733 &#9733 &#9733 &#9733</span>
-                            <span class="greystar">&#9733</span></label>
-        <span class="score">7.5</span>
-        <span class="dot">•</span>
-        <span class="orders">154 orders</span>
-        <span class="dot">•</span>
-        <span class="shipping">Free Shipping</span>
-      </div>
-    </div>
-
-    <p class="product-desc">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-
-    <a href="#" class="view-details">View details</a>
-  </div>
-
-  <button class="wishlist-btn" aria-label="Add to wishlist">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="#0d6efd" stroke-width="2" viewBox="0 0 24 24">
-      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-    </svg>
-  </button>
-</div>
-<!-- Product card 2 -->
-<div class="product-card">
-  <div class="product-img">
-    <img src="images/image2.png" alt="Canon Camera EOS 2000, Black 10x zoom">
-  </div>
-
-  <div class="product-info">
-    <h3 class="product-name">GoPro HERO6 4K Action Camera - Black</h3>
-
-    <div class="product-price">
-      <span class="current">$998.00</span>
-      <span class="old">$1128.00</span>
-    </div>
-
-    <div class="product-meta">
-      <div class="rating">
-       <label for="star4"><span class="allstars">&#9733 &#9733 &#9733 &#9733</span>
-                            <span class="greystar">&#9733</span></label>
-        <span class="score">7.5</span>
-        <span class="dot">•</span>
-        <span class="orders">154 orders</span>
-        <span class="dot">•</span>
-        <span class="shipping">Free Shipping</span>
-      </div>
-    </div>
-
-    <p class="product-desc">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-
-    <a href="#" class="view-details">View details</a>
-  </div>
-
-  <button class="wishlist-btn" aria-label="Add to wishlist">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="#0d6efd" stroke-width="2" viewBox="0 0 24 24">
-      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-    </svg>
-  </button>
-</div>
-<!-- Product card 3 -->
- <div class="product-card">
-  <div class="product-img">
-    <img src="images/image3.png" alt="Canon Camera EOS 2000, Black 10x zoom">
-  </div>
-
-  <div class="product-info">
-    <h3 class="product-name">GoPro HERO6 4K Action Camera - Black</h3>
-
-    <div class="product-price">
-      <span class="current">$998.00</span>
-      <span class="old">$1128.00</span>
-    </div>
-
-    <div class="product-meta">
-      <div class="rating">
-       <label for="star4"><span class="allstars">&#9733 &#9733 &#9733 &#9733</span>
-                            <span class="greystar">&#9733</span></label>
-        <span class="score">7.5</span>
-        <span class="dot">•</span>
-        <span class="orders">154 orders</span>
-        <span class="dot">•</span>
-        <span class="shipping">Free Shipping</span>
-      </div>
-    </div>
-
-    <p class="product-desc">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-
-    <a href="#" class="view-details">View details</a>
-  </div>
-
-  <button class="wishlist-btn" aria-label="Add to wishlist">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="#0d6efd" stroke-width="2" viewBox="0 0 24 24">
-      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-    </svg>
-  </button>
-</div>
- <!-- Product card 4 -->
-  <div class="product-card">
-  <div class="product-img">
-    <img src="images/image4.png" alt="Canon Camera EOS 2000, Black 10x zoom">
-  </div>
-
-  <div class="product-info">
-    <h3 class="product-name">GoPro HERO6 4K Action Camera - Black</h3>
-
-    <div class="product-price">
-      <span class="current">$998.00</span>
-      <span class="old">$1128.00</span>
-    </div>
-
-    <div class="product-meta">
-      <div class="rating">
-       <label for="star4"><span class="allstars">&#9733 &#9733 &#9733 &#9733</span>
-                            <span class="greystar">&#9733</span></label>
-        <span class="score">7.5</span>
-        <span class="dot">•</span>
-        <span class="orders">154 orders</span>
-        <span class="dot">•</span>
-        <span class="shipping">Free Shipping</span>
-      </div>
-    </div>
-
-    <p class="product-desc">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-
-    <a href="#" class="view-details">View details</a>
-  </div>
-
-  <button class="wishlist-btn" aria-label="Add to wishlist">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="#0d6efd" stroke-width="2" viewBox="0 0 24 24">
-      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-    </svg>
-  </button>
-</div>
-  <!-- Product card 5 -->
-   <div class="product-card">
-  <div class="product-img">
-    <img src="images/image5.png" alt="Canon Camera EOS 2000, Black 10x zoom">
-  </div>
-
-  <div class="product-info">
-    <h3 class="product-name">GoPro HERO6 4K Action Camera - Black</h3>
-
-    <div class="product-price">
-      <span class="current">$998.00</span>
-      <span class="old">$1128.00</span>
-    </div>
-
-    <div class="product-meta">
-      <div class="rating">
-       <label for="star4"><span class="allstars">&#9733 &#9733 &#9733 &#9733</span>
-                            <span class="greystar">&#9733</span></label>
-        <span class="score">7.5</span>
-        <span class="dot">•</span>
-        <span class="orders">154 orders</span>
-        <span class="dot">•</span>
-        <span class="shipping">Free Shipping</span>
-      </div>
-    </div>
-
-    <p class="product-desc">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-
-    <a href="#" class="view-details">View details</a>
-  </div>
-
-  <button class="wishlist-btn" aria-label="Add to wishlist">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="#0d6efd" stroke-width="2" viewBox="0 0 24 24">
-      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-    </svg>
-  </button>
-</div>
-   <!-- Product card 6 -->
-    <div class="product-card">
-  <div class="product-img">
-    <img src="images/image6.png" alt="Canon Camera EOS 2000, Black 10x zoom">
-  </div>
-
-  <div class="product-info">
-    <h3 class="product-name">GoPro HERO6 4K Action Camera - Black</h3>
-
-    <div class="product-price">
-      <span class="current">$998.00</span>
-      <span class="old">$1128.00</span>
-    </div>
-
-    <div class="product-meta">
-      <div class="rating">
-       <label for="star4"><span class="allstars">&#9733 &#9733 &#9733 &#9733</span>
-                            <span class="greystar">&#9733</span></label>
-        <span class="score">7.5</span>
-        <span class="dot">•</span>
-        <span class="orders">154 orders</span>
-        <span class="dot">•</span>
-        <span class="shipping">Free Shipping</span>
-      </div>
-    </div>
-
-    <p class="product-desc">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-
-    <a href="#" class="view-details">View details</a>
-  </div>
-
-  <button class="wishlist-btn" aria-label="Add to wishlist">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="#0d6efd" stroke-width="2" viewBox="0 0 24 24">
-      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-    </svg>
-  </button>
-</div>
-</div>
-                <!-- pagination -->
-                 <div class="pagination-wrapper">
-  <div class="pagination">
-    <div class="show-count">
-      <label for="show">Show</label>
-      <select id="show">
-        <option>10</option>
-        <option>20</option>
-        <option>50</option>
-      </select>
-    </div>
-
-    <div class="page-controls">
-      <button class="page-btn prev" aria-label="Previous page">
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path d="M15 18l-6-6 6-6"/>
-        </svg>
-      </button>
-
-      <button class="page-btn active">1</button>
-      <button class="page-btn">2</button>
-      <button class="page-btn">3</button>
-
-      <button class="page-btn next" aria-label="Next page">
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path d="M9 6l6 6-6 6"/>
-        </svg>
-      </button>
-    </div>
-  </div>
-</div>
-
-            </section>
-        </div>
 
     </div>
 
