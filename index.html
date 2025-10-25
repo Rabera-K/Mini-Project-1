@@ -181,57 +181,77 @@
 
                     <button class="apply-btn">Apply</button>
                 </div>
-       
 
-        <!-- Conditions section -->
-        <div class="filter-section">
-            <button class="filter-header">
-                Conditions
-                <span class="arrow">&#x2303;</span>
-            </button>
-            <ul class="condition-list">
-                <li><label><input type="checkbox" name="conditions" value="any"> Any</label></li>
-                <li><label><input type="checkbox" name="conditions" value="refurbished"> Refurbished</label>
-                </li>
-                <li><label><input type="checkbox" name="conditions" value="brand new"> Brand new</label></li>
-                <li><label><input type="checkbox" name="conditions" value="old items"> Old items</label></li>
-                <li><a href="#">See all</a></li>
-            </ul>
+
+                <!-- Conditions section -->
+                <div class="filter-section">
+                    <button class="filter-header">
+                        Conditions
+                        <span class="arrow">&#x2303;</span>
+                    </button>
+                    <ul class="condition-list">
+                        <li><label><input type="checkbox" name="conditions" value="any"> Any</label></li>
+                        <li><label><input type="checkbox" name="conditions" value="refurbished"> Refurbished</label>
+                        </li>
+                        <li><label><input type="checkbox" name="conditions" value="brand new"> Brand new</label></li>
+                        <li><label><input type="checkbox" name="conditions" value="old items"> Old items</label></li>
+                        <li><a href="#">See all</a></li>
+                    </ul>
+                </div>
+
+                <!-- Ratings section -->
+                <div class="filter-section">
+                    <button class="filter-header">
+                        Ratings
+                        <span class="arrow">&#x2303;</span>
+                    </button>
+                    <div class="rating-filter">
+                        <input type="checkbox" id="star5" name="rating" value="5">
+                        <label for="star5"><span class="allstars">&#9733 &#9733 &#9733 &#9733 &#9733</span></label><br>
+
+                        <input type="checkbox" id="star4" name="rating" value="4">
+                        <label for="star4"><span class="allstars">&#9733 &#9733 &#9733 &#9733</span>
+                            <span class="greystar">&#9733</span></label><br>
+
+                        <input type="checkbox" id="star3" name="rating" value="3">
+                        <label for="star3"><span class="allstars">&#9733 &#9733 &#9733</span>
+                            <span class="greystar">&#9733 &#9733</span></label><br>
+
+                        <input type="checkbox" id="star2" name="rating" value="2">
+                        <label for="star2"> <span class="allstars">&#9733 &#9733</span>
+                            <span class="greystar">&#9733 &#9733 &#9733</span></label>
+
+                    </div>
+                </div>
+            </aside>
         </div>
 
-        <!-- Ratings section -->
-        <div class="filter-section">
-            <button class="filter-header">
-                Ratings
-                <span class="arrow">&#x2303;</span>
-            </button>
-            <div class="rating-filter">
-                <input type="checkbox" id="star5" name="rating" value="5">
-                <label for="star5"><span class="allstars">&#9733 &#9733 &#9733 &#9733 &#9733</span></label><br>
-
-                <input type="checkbox" id="star4" name="rating" value="4">
-                <label for="star4"><span class="allstars">&#9733 &#9733 &#9733 &#9733</span>
-                    <span class="greystar">&#9733</span></label><br>
-
-                <input type="checkbox" id="star3" name="rating" value="3">
-                <label for="star3"><span class="allstars">&#9733 &#9733 &#9733</span>
-                    <span class="greystar">&#9733 &#9733</span></label><br>
-
-                <input type="checkbox" id="star2" name="rating" value="2">
-                <label for="star2"> <span class="allstars">&#9733 &#9733</span>
-                    <span class="greystar">&#9733 &#9733 &#9733</span></label>
-
-            </div>
+        <div class="item">Item 2<section class="content">
+                <!-- search header -->
+                <div class="content-title">
+                    <span class=title-text>12,911 items in <strong>Mobile accessory</strong></span>
+                    <label><input type="checkbox">Verified only</label>
+                    <select class="featured" aria-label="sort-products">
+                        <option value="">Featured</option>
+                        <option>Brands</option>
+                        <option>Category</option>
+                        <option>Condition</option>
+                        <option>Ratings</option>
+                    </select>
+                    <div class="content-controls">
+                        <label class="view-toggle" title="Toggle view">
+                            <button class="icon-btn active" aria-pressed="true" aria-label="Grid view"><img
+                                    src="icons/grid.svg"></button>
+                            <button class="icon-btn" aria-pressed="false" aria-label="List view"><img
+                                    src="icons/list.svg"></button>
+                        </label>
+                    </div>
+                </div>
+                <!-- product cards -->
+                 
+                <!-- pagination -->
+            </section>
         </div>
-        </aside>
-    </div>
-
-    <div class="item">Item 2<section class="content">
-            <!-- search header -->
-            <!-- product cards -->
-            <!-- pagination -->
-        </section>
-    </div>
 
     </div>
 
