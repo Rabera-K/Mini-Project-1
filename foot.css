@@ -1,1 +1,61 @@
 @import "style.css";
+
+footer {
+    width: 1,440px;
+    height: 324px;
+}
+.section-1 {
+    display: flex;
+    background: var(--white);
+    padding:40px 187px 0 130px;
+    justify-content: space-between;
+   
+}
+.socials {
+    width: 276px;
+    height: 157px;
+    margin-bottom: 59px;
+}
+.socials p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray-600);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 48px;
+} 
+/* footer end */
+.footer-end {
+    width: 100%;
+    height: 68px;
+    border: 1px solid #dee2e6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 23px 136px 21px 130px;
+}
+.footer-end p{
+    color: #606060;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 24px;
+}
+.footer-language {
+    display: flex;
+    width: 53px;
+    height: 24px;
+    align-items: center;
+    gap: 6px; 
+}
+.footer-end span {
+    display: flex;
+    width: 107px;
+    gap: 30px;
+}
+
+.language {
+    color: #606060;
+    margin: 0;
+    padding: 0;
+}
