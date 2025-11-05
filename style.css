@@ -58,6 +58,7 @@ ul li a {
 body {
     background-color: var(--background-page);
     font-family: var(--font-main);
+    overflow-x: hidden;
 }
 /* HEADER */
 .header {
